@@ -6,22 +6,22 @@
 - It was created by John Gruber and Aaron Swartz in 2004 as a markup language that is appealing to human readers in  its source code form.
 - Now Markdown is widely used in readme files, software documentation pages, online forums and so on.
 
-**Some of the basic syntax of Markdown file**  
+**Some of the basic syntax of the Markdown file**  
 
 ---
 
 1. **Headings**   
-    The Heading is create with the combination of (#) sign in front of a word or phrase.   
-    With the increase in the number of the (#) sign the heading phrase become smaller.   
+    The Heading is created with the combination of (#) sign in front of a word or phrase.   
+    With the increase in the number of the (#) sign the heading phrase becomes smaller.   
     The Number can go from level 1 to level 6.   
-    Always space should be maintain between the sign (#) and the phrase of heading.
+    Always space should be maintained between the sign (#) and the phrase of heading.
      ```md
         # heading level 1
     ```
     # heading level 1
 
 2. **Paragraph**   
-    A paragraph can be created like a normal paragraph writing.   
+    A paragraph can be created like a regular paragraph writing.   
     Simply use a blank line to separate one or more lines of text.
     ```md
     This is a paragraph
@@ -52,21 +52,21 @@
     ***This is both Bold and Italic***
        
 5. **Blockquotes**   
-    A sign (>) is added in front of a phrase or text to create blockquote.   
+    A sign (>) is added in front of a phrase or text to create a blockquote.   
     **Nested Blockquotes** - A sign (>>) is added in front of a phrase or text to create nested blockquote
     ```md
     > This is a blockquote
-    > We can put multiple text or sentence
+    > We can put multiple texts or sentences
     >> Thi is a nested blockquote
     ```   
     > This is a blockquote.   
     > We can put multiple text or sentence.   
-    >> This is a nested blockquote.    
+    >> This is nested blockquote.    
  
 6. **List**   
     List can be of ordered or unordered lists where things can be organized.   
     **Ordered Lists** - Ordered lists can be created by using a line items with numbers followed by periods.   
-    The number can be in randomly order manner but it should start with number one.   
+    The number can be in a random order manner but it should start with number one.   
     **Unordered Lists** - A line items with dashes(-), asterisks(*) or plus sign(+) added in front of it with one or more indent to create an Unordered Lists.  
     ```md
     a. order list one 
@@ -85,7 +85,7 @@
 
 7. **Code and Code Blocks**  
     **Code** - Code can be added using single  (\` \`) sign before and after the code to be added with no space.      
-    **Code Block** - Code block can be added using double backtick (\` \`) sign before and after the code with no space between teh backtick and the code.   
+    **Code Block** - Code block can be added using double backtick (\` \`) sign before and after the code with no space between the backtick and the code.   
     **Escaping Backticks** - Any of the sign used in the markup syntax can be escape by using the backticks (\\) before the phrase.   
       
     code -   
@@ -125,7 +125,7 @@
      [Learn Code Online](https://web.learncodeonline.in/ "LCO")   
 
 10. **Images**    
-    Image can be added by starting with exclamation mark (!) followed by sqaure bracket with the image title and parethesis with the image path or link.   
+    Image can be added by starting with exclamation mark (!) followed by square bracket with the image title and parenthesis with the image path or link.   
     After the link path optional image title can be put surrounded with quotation mark (") with one space, on mouse over the image link will pop out.
 
     ```md
@@ -150,6 +150,6 @@
     |---|---|---|
     |One | Two | Three |
 
-*Reference and further reading* 👉 [markdownguid.org](https://www.markdownguide.org/basic-syntax/ "Mark down Basic syntax")
+*Reference and further reading* 👉 [markdownguide.org](https://www.markdownguide.org/basic-syntax/ "Mark down Basic syntax")
 
 Thank you for reading ....😃
