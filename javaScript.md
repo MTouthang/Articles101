@@ -60,3 +60,40 @@ three
 *TypeScript comes into picture to statically assign the type of data structure that is require for the variable*
 
 #### Q5. What is Hoisting in JavaScript?
+- In JavaScript Hoisting refers to the process whereby the interpreter appears to move the declaration of functions, variables or clasess to the top of their scope, prior to execution of the code.
+```javascript
+
+console.log(x) // undefined
+getName() // My name is Touthang
+
+let x = 10
+
+function getName(){
+console.log("My name is Touthang")
+}
+
+// the variable and function are hoisted in the above program
+```
+
+#### Q6. What is undeclared and undefined in javascript?
+- undeclared -> give responsibility to unborn or non existing variable or function
+- undefined -> giving responsibility to the born or existing variable or function.
+```javascript
+let massage = "hello world"
+console.log(massage) // undefined
+console.log(msg) // undeclared
+```
+
+#### Q7. What is 'This'  in JavaScript ?
+- "This" keyword refers to an object that is executing the current piece of code. 
+- It references the object that is executing the current function
+- If the function being referenced is a regular function, "this" references the global object.
+- If the function that is being reference is a method in an object, "this" references the object itself.
+- it references undefined in strict mode
+- it reference window object in browser environment
+- it reference empty curly braces in node environment.
+
+#### Q8. When was Arrow function introduced?
+- ES6 -> Ecma script 2015 
+
+#### Q9. Difference between let, var and const ?
