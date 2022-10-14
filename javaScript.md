@@ -97,3 +97,32 @@ console.log(msg) // undeclared
 - ES6 -> Ecma script 2015 
 
 #### Q9. Difference between let, var and const ?
+- In JavaScript, let var and const are three reserved keyword for storing variable.
+- **var** 
+    - The scope of a var variable is global scope or functional scope.
+    - It can be updated and re-declared into the scope
+    - It can be declared without initialization.
+    - It can be accessed without initialization as its default value is "undefined".
+    - Hoisting done, with initializing as default value
+```javascript
+
+```
+- **let** 
+    - The scope of a let variable is block scope.
+    - It can be updated but cannot be redeclared into scope
+    - It can be declared without initialization.
+    - It cannot be accessed without initialization otherwise it will give 'referenceError'.
+    - Hoisting done, but not initialized (this is the reason for error when we access the let variable before declaration/initialization)
+```javascript
+
+```
+
+- **const** 
+    - The scope of a var variable is block scope.
+    - It can be updated and re-declared into the scope
+    - It cannot be declared without initialization.
+    - It cannot be accessed without initialization as it cannot be declared without initialization
+    - Hoisting done, but not initialized (this is the reason for error when we access the let variable before declaration/initialization)
+```javascript
+//todo - manipulation of const
+```
