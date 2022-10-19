@@ -105,7 +105,9 @@ console.log(msg) // undeclared
     - It can be accessed without initialization as its default value is "undefined".
     - Hoisting done, with initializing as default value
 ```javascript
-
+console.log(greet) // undefined
+var greet = "hello I'm var"  
+console.log(greet) // hello I'm var
 ```
 - **let** 
     - The scope of a let variable is block scope.
@@ -114,7 +116,9 @@ console.log(msg) // undeclared
     - It cannot be accessed without initialization otherwise it will give 'referenceError'.
     - Hoisting done, but not initialized (this is the reason for error when we access the let variable before declaration/initialization)
 ```javascript
-
+console.log(name) // reference Error
+let name = "I'm let"
+console.log(name) // I'm let
 ```
 
 - **const** 
@@ -124,5 +128,28 @@ console.log(msg) // undeclared
     - It cannot be accessed without initialization as it cannot be declared without initialization
     - Hoisting done, but not initialized (this is the reason for error when we access the let variable before declaration/initialization)
 ```javascript
-//todo - manipulation of const
+const PI = 22/7
+console.log(PI)  // 3.142857142857143
+const PI = 2.15 // SyntaxError: Identifier 'PI' has already been declared  
 ```
+
+#### Q10. What is DOM and Virtual DOM ?
+- DOM : 
+    - The Document Object Model(DOM) is a programming interface for web documents. 
+    - It represents the page so that programs can change the document structure, style and content. 
+    - The DOM represents the document as nodes and objects, that way, programming languages can interact with the page.
+    - Representation of all the elements in a tree structure.
+    !["dom"](https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/DOM-model.svg/1200px-DOM-model.svg.png)
+- VDOM: 
+    - The virtual DOM (VDOM) is a programming concept where an ideal or virtual representation of a UI is kept in memory and synced with the "real" DOM by a library such as ReactDOM.
+    - This process is called reconciliation.
+
+#### Q11. Explain Closures in JavaScript
+- A Closure is the combination of a function bundled together (enclosed) with reference to its surrounding state (the lexical environment).
+- In other words, a closure gives you access to an outer function's scope from an inner function.
+- In javaScript closures are created every time a function is created at function creation time.
+
+```javascript
+
+```
+Q12. Explain rest and spread operators ?
