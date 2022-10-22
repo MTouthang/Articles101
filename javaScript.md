@@ -150,6 +150,77 @@ const PI = 2.15 // SyntaxError: Identifier 'PI' has already been declared
 - In javaScript closures are created every time a function is created at function creation time.
 
 ```javascript
+function a() {
+  const c = 09;
+  function b() {
+    console.log(c);
+  }
+  return b;
+}
+
+let result = a();
+result();
+// output - 9 
+```
+- Uses of Closure
+    - Module Design Pattern
+    - Currying (transform function of multiple arguments to multiple function with single function)
+    - functions like which only runs once
+    - maintaining state in async world
+    - setTimeouts
+    - iterators
+    - and many more
+#### Q12. Explain rest and spread operators ?
+- Rest parameter 
+    - The rest parameter syntax allows a function to accept indefinite numbers of arguments as an array, providing a way to represent variadic(function which can except indefinite arguments) function in javascript
+```javascript
+function sum(...args) {
+  let total = 0;
+  for (let i of args) {
+    total += i;
+  }
+  return total;
+}
+
+console.log(sum(2, 2, 2));
+// output - 6
+```
+- Spread operators
+    - Spread syntax operators(...) allows an iterable, such as an array or string, to be expanded in places where zero or more arguments (for function calls ) or elements (for array literal)
+    - In object literals Spread syntax enumerates the properties of an object and adds the key value pairs to the object being created.
+```javascript
+function sum(x, y, z) {
+  return x + y + z;
+}
+const arr = [1, 2, 3];
+
+console.log(sum(...arr));
+
+// output - 6
+```
+#### Q13 What are promises in javascript and How to use of promises in JavaScript ?
+- A Promise is an object representing the eventual completion (or failure) of an asynchronous operation and its resulting value.
+- A Promise is in one of these states: 
+    - **pending**: initial state, neither fulfilled nor rejected
+    - **fulfilled**: meaning that the operation was completed successfully.
+    - **rejected**: meaning that the operation failed.
+- While a Promise object is "pending" (working), the result is undefinded.
+- When a Promise object is "fulfilled", the result is a value.
+- When a Promise object is "rejected", the result is an error object.
+```javascript
+// creating function --
+let promise = new Promise(function (resolve, reject) {
+  if (true) {
+    resolve("ok! resolve");
+  } else {
+    reject("No! rejected");
+  }
+});
+
+// chaining the function -
+promise
+  .then((result) => console.log(result)) // ok! resolve
+  .catch((error) => console.log("error")); // error
 
 ```
-Q12. Explain rest and spread operators ?
+#### what is currying in javascript
