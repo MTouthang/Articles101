@@ -26,6 +26,32 @@ if(true){
 }
 console.log(str) // Reference error: str is not define
 ```
+
+- **Global Scope**:
+    - Variables declared globally outside any function have Global scope.
+    - Global variable can be accessed from anywhere in a javaScript program.
+    - Variables declared with var, let and const are quite similar when declared out side a block. They all have global scope.
+```javascript
+let text = "Global scope"
+function printName(){
+console.log(text) 
+}
+printName() // Global scope
+```
+- **Lexical Scope**:
+    - Lexical scope is the definition area of an expression.
+    - In other word, an item's lexical scope is the place in which item got created.
+    - Another name for lexical scope is static scope.
+    - The place an item got invoked (or called) is not necessarily the item's lexical scope. Instead an item's definition space of its lexical scope.
+```javascript
+function getName(){
+const myName= "Touthang"
+return myName;
+}
+
+// In the above function - 
+// we declare myName variable inside the function getName(),Therefore, MyName's lexical scope is getName()'s local environment because getName() is myName's definition space.
+```
 #### Q3. What is Synchronous and aSynchronous in javascript ?
 - **Synchronous** : Synchronous means to be in a sequence, i.e every statement has to wait for the earlier statement to get executed.  
 ***stop execution of further code until it is done***
@@ -223,4 +249,13 @@ promise
   .catch((error) => console.log("error")); // error
 
 ```
+
+#### 14. What are single Threaded and Multi-Threaded programming language.
+#### 15. Is JavaScript statically or Dynamically type language?
+#### 16. Scope Chaining ?
+#### 17. What is arrow function ?
+#### 18.  What is DOM and Virtual DOM ? DOM explaination in Details ? 
+#### 19. What are different type of Functions we have and how all fuctions works ?
+#### 20. Different types of Error?
+#### 21. What is BOM(browser object model)?
 #### what is currying in javascript
