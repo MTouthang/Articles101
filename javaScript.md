@@ -249,7 +249,29 @@ promise
   .catch((error) => console.log("error")); // error
 
 ```
+#### 14. what is __proto__ in javascript
+-The __proto__ property of Object.prototype is an accessor property (a getter function and a setter function) that exposess the internal [[Prototype]] (either an object or null) of the object through which it is accessed.
+-  __proto__ is a way to inherit properties from an object in javascript.
+- __proto__ a property of Object.prototype is an accessor property that exposes the [[Prototype]] of the object throught which it is accessed.
+- This __proto__ sets alll properties of the obect set in its [[Prototype]] to the target object.
+```javascript
+var animal = {
+  name: "blacky",
+  age: 3,
+  sound() {
+    console.log(`${this.name} say bou2`);
+  },
+};
+var Dog = {
+  owner: "me",
+  canRun: true,
+};
+Dog.__proto__ = animal;
+Dog.sound();
 
+```
+
+#### 15. Prototype vs __proto__
 #### 14. What are single Threaded and Multi-Threaded programming language.
 #### 15. Is JavaScript statically or Dynamically type language?
 #### 16. Scope Chaining ?
