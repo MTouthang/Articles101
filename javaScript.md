@@ -268,10 +268,21 @@ var Dog = {
 };
 Dog.__proto__ = animal;
 Dog.sound();
-
+// output - blacky say bou2
 ```
 
-#### 15. Prototype vs __proto__
+#### 15. Prototype in Javascript
+- Every object in Javascript has a built-in property, which is called its prototype.
+- The prototype is itself an object, so the prototype will have its own prototype, making what's called a **Prototype chain**
+- The chain ends when we reach a prototype that has null for its own prototype.
+- *Prototypes are a powerful and very flexible feature of Javascript, making it possible to reuse code and combine objects*
+- **The javasScript prototype property allows you to add new properties to object constructor**
+ ```javascript
+// need to add javascript code of prototype here
+
+```
+- **The javaScript property also allows you to add new methods to objects constructors**
+
 #### 14. What are single Threaded and Multi-Threaded programming language.
 #### 15. Is JavaScript statically or Dynamically type language?
 #### 16. Scope Chaining ?
