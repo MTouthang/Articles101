@@ -11,3 +11,5 @@ var Dog = {
 };
 Dog.__proto__ = animal;
 Dog.sound();
+
+console.log(Dog);

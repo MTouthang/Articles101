@@ -278,11 +278,35 @@ Dog.sound();
 - *Prototypes are a powerful and very flexible feature of Javascript, making it possible to reuse code and combine objects*
 - **The javasScript prototype property allows you to add new properties to object constructor**
  ```javascript
-// need to add javascript code of prototype here
+function Person(first, last, age, eyecolor) {
+  this.firstName = first;
+  this.lastName = last;
+  this.age = age;
+  this.eyecolor = eyecolor;
+}
 
+Person.prototype.nationality = "india";
+
+const john = new Person("jon", "doe", 33, "blue");
+console.log(john.nationality);
+// output - india
 ```
 - **The javaScript property also allows you to add new methods to objects constructors**
+```javascript
+function Person(first, last, age, eyecolor) {
+  this.firstName = first;
+  this.lastName = last;
+  this.age = age;
+  this.eyecolor = eyecolor;
+}
+const john = new Person("John", "doe", 33, "blue");
+Person.prototype.name = function () {
+  return this.firstName + this.lastName;
+};
 
+console.log(john.name());
+// output - Johndoe
+```
 #### 14. What are single Threaded and Multi-Threaded programming language.
 #### 15. Is JavaScript statically or Dynamically type language?
 #### 16. Scope Chaining ?
