@@ -15,3 +15,11 @@
     - *They simplify complex process and introduce features to help developers write better code*
 
 ### Up and Running with JavaScript
+- **When does the browser execute Javascript?**
+    - *By default: When the script is encountered. if the script is set to "async", when  the script is fully loaded. if the script is set to "defer", the entire HTML page is rendered.*
+- **What is the correct markup for adding an external JavaScript file to an HTML document?**
+    - *```<script src="javascript.js" async></script>```*
+- **What happens when you defer JavaScript?**
+    - The browser loads the javaScript asynchronously  when it is encountered, then waits until all HTML is rendered before executing the script. 
+- **JavaScript modules are heavily used in frameworks like React and Vue. What is the advantage of using modules?**
+    - *Modules enable modularization of code where inidividual functions, components, data objects and other parts can be separated into individual files.*

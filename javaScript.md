@@ -308,6 +308,11 @@ console.log(john.name());
 // output - Johndoe
 ```
 #### 14. What are single Threaded and Multi-Threaded programming language.
+- Single Threaded programming language
+    - A single threaded langauge is one with a single call stack and a single memory heap.
+    - It means that it runs code only one thing at a time.
+- Multi-Threaded programming language
+    - Multithreading specifically refers to the concurrent execution of more than one sequential set (thread) of instructions.
 #### 15. Is JavaScript statically or Dynamically type language?
 #### 16. Scope Chaining ?
 #### 17. What is arrow function ?
