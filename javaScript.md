@@ -307,15 +307,27 @@ Person.prototype.name = function () {
 console.log(john.name());
 // output - Johndoe
 ```
-#### 14. What are single Threaded and Multi-Threaded programming language.
+#### 16. What are single Threaded and Multi-Threaded programming language.
 - Single Threaded programming language
     - A single threaded langauge is one with a single call stack and a single memory heap.
     - It means that it runs code only one thing at a time.
 - Multi-Threaded programming language
     - Multithreading specifically refers to the concurrent execution of more than one sequential set (thread) of instructions.
-#### 15. Is JavaScript statically or Dynamically type language?
-#### 16. Scope Chaining ?
-#### 17. What is arrow function ?
+#### 17. Scope Chaining ?
+- Scope chains establish the scope for a given function. Each function defined has its own nested scope, and any function defined within another function has a local scope which is linked to the outer function - this link is called chain.
+```javascript
+function parent() {
+  var name = "Touthang";
+  function print() {
+    console.log(name); // functon link to parent thats why names is accessible
+  }
+  print();
+}
+
+parent();
+// output - Touthang
+```
+#### 18. What are the different types of function?
 #### 18.  What is DOM and Virtual DOM ? DOM explaination in Details ? 
 #### 19. What are different type of Functions we have and how all fuctions works ?
 #### 20. Different types of Error?
