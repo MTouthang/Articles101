@@ -328,6 +328,89 @@ parent();
 // output - Touthang
 ```
 #### 18. What are the different types of function?
+A function is a block of code that is designed to perform a task and executed when it is been called or invoked.
+
+There are 3 ways of writing a function in JavaScript:    
+    1. Function Declaration or Function statement   
+    2. Function Expression  
+    3. Arrow Function 
+- Function statement or function decalaration:   
+    - Function declaration is the traditional way to define a function. It is somehow similar to the way we define a function in other programming languages.
+```javascript
+// example:  Function declaration and function statement
+function add(a,b){
+    console.log(a + b)
+}
+```
+- function expression:
+    - In function expression, we define a function using a variable and store the returned value in the variable.
+```javascript
+// example:  Function expression 
+const add = function(a,b){
+console.log(a+b)
+}
+```   
+- Anonymous Function
+    - Anonymouse function is a function that does not have any name associated with it. we use only the function keyword without the function name.
+    - An anonymouse function is not accessible after its initial creation, it can only be accessed by a variable it is stored in a s a function as a value.
+    - An anonymouse function can also have multiple arguments but only one expression.
+```javascript
+// Anonymouse function syntax:
+function() {
+  // function body
+}
+// Anonymouse self invoking function: IIFE (immediately invoked Function Expression)
+(() => {
+})()
+```
+- Named Function Expression:
+    - A function is called Named Function Expression when a function with named is assign to a variable
+```javascript
+// Named Function Expression --
+  var b = function xyz(){
+    console.log("hello")
+}
+```
+- Difference between Parameters and Arguments?
+    - Parmeters - variable or value pass when the function is declared
+    - Arguments - variable or value pass when the function is calls
+```javaScript
+var a = function (a , b){ // function with a and b as parameters
+    // function body 
+}
+b(1, 2) // function with an argument: 1 abd 2
+```
+- first Class function or first class citizens?
+    - A programming language is said to have first-class functions if functions in that language are treated like other variables. So the function can be assigned to any other variable or passed as an argument or can be returned by another function.
+    - Ability to be used like values
+```javascript
+// Example of first class function --
+let greet = function () {
+  console.log("hello");
+};
+function greeting(greet) {
+  greet();
+}
+greet();
+```
+- Arrow function:
+    - Arrow functions were introduced in ES6
+    - Arrow functions allow us to write shorter function syntax
+```javascript
+// Example: 
+let calc = (a, b) => a*b
+let calc = (a, b) => a * b;
+
+console.log(calc(6, 6));
+// output  -- 36
+or
+hello = () => {
+  return "hello world";
+};
+console.log(hello());
+
+```
+#### 18. What are Higher order function in javaScript?
 #### 18.  What is DOM and Virtual DOM ? DOM explaination in Details ? 
 #### 19. What are different type of Functions we have and how all fuctions works ?
 #### 20. Different types of Error?

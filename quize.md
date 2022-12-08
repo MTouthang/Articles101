@@ -57,3 +57,79 @@ const myObject = {
     - A function is a stand-alone function. A method is a function within an object.
 - **Can you use arrow functions to create object methods**
     - No, object methods must be declared using function expression or the method definition shorthand.
+### String output
+- **How do you declare a javaScript expression inside a template literals?**
+    - Using a dollar symbol followed by curly brackets:
+```javascript
+const myString = `Some texta and an ${expression}`
+```
+### DOM - Document Object Model
+- **What method(s) would you use to check if an element has a specific ID and if so replace it with a different ID?**
+    - the ```element.hasAttribute()``` and ```element.setattribute()``` methods.
+- **What is the difference in the return from the ```element.className``` and ```element.classList``` properties?**
+    - ```element.className``` returns a string containing all classes appended to the element, ```element.classList``` returns a DOMTokenList with each class appended to the element.
+- **What does the HTML markup of this image element look like after the following script has executed?**
+```javascript
+const newImage = document.createElment("imag")
+newImage.classList.add("feat-img")
+newImage.setAttribute("src", "logo.svg")
+newImage.setAttribute("alt", "The company logo")
+newImage.style.cssText = "display: block"
+```
+```html
+    <img class="feat-img src="logo.svg" alt="The company logo" style="display: block">    
+```
+- **What is the value of ```const target``` after this code has executed?**
+```javascript
+const target = document.querySelectorAll('a');
+```
+    - A node list containing each element object matching the query.
+
+- **What is the value of const target after this code has executed (assuming there are elements in the DOM with the class "note")?**
+```javascript
+const target = document.getElementByClassName(".note");
+```
+    - An empty array-like HTML collection object.(The getElementByClassName() method receives a string of classnames to be found as its parameter Adding the . in front of the classname invalidates the query and no match is produced.)
+
+- The querySelector() and querySelectorAll() methods use what kind of selectors as thier parameter?
+    - A CSS selector string.
+- **What happen if you run this code:**
+```javascript
+const target = document.querySelector(".first-paragraph")
+target.style.font-family = "sans-serif"
+```
+    - "Uncaught SyntaxError: Invalid left-hand side in assignment". JavaScript does not allow for hyphens in property names. When targetting CSS properties, use camelCase, so the "font-family" property becomes "fontFamily".
+- **What does the ```element.classList.toggle()``` method do?**
+    - Adds the specified class if it is not appended to the element, removes the specified class if it is appended to the element.
+- **Where in the HTML document does the new element appear when you use the document.createElement() methods?**
+    - Nowhere: The element is created, but has not been added to the DOM.
+- **What is the DOM**
+    - DOM is short for "Document Object Model", the document object browser creates when it renders an HTML document.
+- **How do you add an element created using createElement() to the DOM**
+    - Using insertAdjacentElement(), prepend(), append() or appendChild methods
+
+
+### Variables: Container for everything.
+- **What does a single equals in JavaScript indicate?**
+    - A value is assigned to the named variable
+- **What happens if you use a named variable without first declaring it  using the var, let or cont keywords**
+    - A global var is created with the name and value assignment.
+- **What is the value of defaultColor when it is logged in the console?**
+```javascript
+var defaultColor = "purple"
+function setColor(){
+if(defaultColor === "purple"){
+    
+    let defaultColor = "orange"
+
+}}
+setColor()
+console.log(defaultColor)
+//output - "purple" 
+```
+- **How do you capture the result of a math equation like 42 * 38 in javaScript?**
+    - create a variable and set it equal to the math equation
+- **In what scenario should you use var instead of let to define a variable?**
+    - When you need a globally scoped reassignable variable availabel to all function and statements
+- **Which statement is true?**
+    - Object properties within a constant can be changed
