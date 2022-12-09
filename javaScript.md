@@ -411,6 +411,32 @@ console.log(hello());
 
 ```
 #### 18. What are Higher order function in javaScript?
+- A higher-order function is a function that takes one or more functions as arguments, or returns a function as its output. In JavaScript, a higher-order function is a function that operates on other functions, either by taking them as arguments or by returning them.
+```javascript
+const radius = [3, 1, 2, 4];
+
+const area = function (radius) {
+  return Math.PI * radius * radius;
+};
+
+const diameter = function(radius) {
+ return 2 * radius
+}
+
+const calculate = function (radius, logic) {
+  const output = [];
+  for (let index = 0; index < radius.length; index++) {
+    output.push(logic(radius[index]));
+  }
+  return output;
+};
+
+console.log( `Area - ${calculate(radius, area)}`);
+console.log( `diameter - ${calculate(radius, diameter)}`);
+// output - 
+// Area - 28.274333882308138,3.141592653589793,12.566370614359172,50.26548245743669
+// diameter - 6,2,4,8
+```
 #### 18.  What is DOM and Virtual DOM ? DOM explaination in Details ? 
 #### 19. What are different type of Functions we have and how all fuctions works ?
 #### 20. Different types of Error?
