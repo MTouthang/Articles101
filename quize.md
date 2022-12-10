@@ -133,3 +133,113 @@ console.log(defaultColor)
     - When you need a globally scoped reassignable variable availabel to all function and statements
 - **Which statement is true?**
     - Object properties within a constant can be changed
+
+### Arrays
+- **Given the array below, how would you access the item whose value is 7**  
+```var numbers = [4, 7, 3, 5, 2]```
+    - numbers[1], access by the index number of 7
+- **What will the numbers array look like when the following code finishes executing?**
+```javascript
+var numbers = [1, 2, 3, 4, 5]
+numbers.push(6)
+numbers.unshift(7)
+numbers.pop()
+numbers.shift()
+```
+    - 1, 2, 3, 4, 5: push: add item at last, unshift(): add item in front, pop(): remove the last item, shift(): remove the first item.
+- **what happens when you add a new array item to a previously undefined slot?**
+    - A new slot is added corresponding to the slot number provided.
+- **The first item of an array has the index position 1.**
+    - false, array index position always start with 0
+### functions and methods
+- **What will be printed to the console as the following script is running**
+```javascript
+var sqr = (function(x){
+    console.log(x*x);
+})(my_number)
+
+my_number = 5
+// This code will error out
+```
+- **In a switch statement, what happens when several of the switch cases resolve to true?**
+    - The switch statement returns the first case that resolves to true, then stops
+- **What is the new value of myArray after this script executes?**
+```javascript
+const myArray = [1, 2, 3, 4];
+myArray.forEach((item, index) => {
+  myArray[index] = ++item;
+});
+
+console.log(myArray);
+```
+- **What is the difference between the array.forEach() and array.map() methods?**
+    - array.forEach() executes a provided callback function once for each item in the array. array.map() creates a new array with the results of executing a provided callback function once for each item in the original array.
+- **Anonymouse functions are dangerous because they can be triggered by accident.**
+    - fasle
+- **What logical operator signifies negation (not)?**
+    - !
+- **How do you capture a value returned from a function**
+    - The value is returned to where the function was called, effectively replacing the function call.
+- **What is the purpose of the return keyword in this function**
+```javascript
+const myFunction = (data, modifier) => {
+   if (data >= 3) {
+      return;
+   } else {
+      console.log(data + modifier);
+   }
+}
+```
+    - The return keyword stops the function from executing if the conditional statement is true.
+- **What is meant when we say a function has a callback?**
+    - A callback function is a function passed into another function as an argument, which is then invoked inside the outer function to complete some kind of routine or action.
+- **What is logged in the console when the following script executes:**
+```javascript
+const number = 10;
+if (number <= 9) {
+   console.log("<=9");
+} else if ( number >= 10 ){
+   console.log(">=10");
+}
+// output - ">=10"
+```
+- **Which of the following options is correct syntax for an arrow function?**
+```javascript
+const myFunction = (data) => {
+   console.log(data);
+};
+```
+- **True or false: An arrow function can be used to define an object method**
+    -  false
+- **What is logged in the console when this script executes?**
+```javascript
+const myFunction = (data) => {
+   return;
+   let newData = data + 1;
+   return newData;
+}
+
+console.log(myFunction(5));
+```
+    - Nothing (undefined)  When the `return` statement is encountered, the function ends. In this example, the `return` statement is the first entry in the function, so nothing else executes.
+- **What happens when you assign values to parameters in a function declaration as examplified below:**
+```javascript
+const myFunction = (data = 5, color = "red") => {}
+    - Default values are created for each parameter. If no value is passed to the function, these values are used.
+```
+- **Which answer is a valid example of calling the function expression defined below?**
+```javascript
+const myFunction = function(a) {};
+```
+    - myFunction(1)
+- **What is the difference between a function expression and a function declaration?**
+    - A function declaration defines a function with the specified parameters starting with the function keyword.
+    - A function expression expresses a function inside a variable by assigning the function to the variable
+- **What will the following script print?**
+```javascript
+function myFunc(x, y){
+return(x+y)
+}
+console.log(myFunc(2, myFunc(5, -2)))
+// output - 5
+```

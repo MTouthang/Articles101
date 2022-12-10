@@ -442,3 +442,5 @@ console.log( `diameter - ${calculate(radius, diameter)}`);
 #### 20. Different types of Error?
 #### 21. What is BOM(browser object model)?
 #### what is currying in javascript
+
+1. Fetch API
