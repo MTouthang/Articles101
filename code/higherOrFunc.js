@@ -4,11 +4,11 @@ const area = function (radius) {
   return Math.PI * radius * radius;
 };
 
-const diameter = function (radius) {
+const diameter = (radius) => {
   return 2 * radius;
 };
 
-const calculate = function (radius, logic) {
+const calculate = (radius, logic) => {
   const output = [];
   for (let index = 0; index < radius.length; index++) {
     output.push(logic(radius[index]));

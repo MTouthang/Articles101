@@ -419,11 +419,11 @@ const area = function (radius) {
   return Math.PI * radius * radius;
 };
 
-const diameter = function(radius) {
- return 2 * radius
-}
+const diameter = (radius) => {
+  return 2 * radius;
+};
 
-const calculate = function (radius, logic) {
+const calculate = (radius, logic) => {
   const output = [];
   for (let index = 0; index < radius.length; index++) {
     output.push(logic(radius[index]));
@@ -431,16 +431,76 @@ const calculate = function (radius, logic) {
   return output;
 };
 
-console.log( `Area - ${calculate(radius, area)}`);
-console.log( `diameter - ${calculate(radius, diameter)}`);
+console.log(`Area - ${calculate(radius, area)}`);
+console.log(`diameter - ${calculate(radius, diameter)}`);
+
 // output - 
 // Area - 28.274333882308138,3.141592653589793,12.566370614359172,50.26548245743669
 // diameter - 6,2,4,8
 ```
+### 19. Promises in javaScript
+- In JavaScript, a Promise is an object that represent the eventaul result of an asynchronouse operation.
+- A Promise provides a way to handle the result of an asynchronous operation in a consistent manner, regardless of whether the operation succeeds or fails.
+- Promises are commonly use in JavaScript to handle the results of asynchronouse operations, such as network requests or user input events.
+- A Promise is in one of these states:
+    - pending: initial state, neither fulfilled nor rejected
+    - fulfilled: meaning that the operation was completed successfully
+    - rejected: meaning that the operation failed.
+- How promise is created :-
+    - Promises in JavaScript are created using the `Promise` constructor which takes a callback function as its argument which is immediately invoked when the promise is called.
+    - The callback function takes two arguments: `resolve` and `reject`.
+    - The `resolve` function is used to indicate the asynchronous operation has completed.
+    - and the `reject` function is used to indicate that the operation has failed.
+- Here is an example of Promise
+```javascript
+// creating function --
+let promise = new Promise(function (resolve, reject) {
+  if (true) {
+    resolve("ok! resolve");
+  } else {
+    reject("No! rejected");
+  }
+});
+
+// chaining the function -
+promise
+  .then((result) => console.log(result)) // ok! resolve
+  .catch((error) => console.log("error")); // error
+
+const prom = new Promise(function (resolve, reject) {
+  setTimeout(() => {
+    resolve("hello world");
+  }, 3000);
+});
+
+prom.then((message) => console.log(message));
+prom.catch((error) => console.log(error));
+// output ---
+// ok! resolve
+// hello world (after 3 second)
+```
+#### 20. Fetch API
+-    The Fetch API provides a JavaScript interface for accessing and manipulation parts of the protocol, such as request and response.
+- It is part of the standard API for modern web browsers and allows JavaScript code to send and receive data from a server using various methods, such as GET and POST.
+- The Fetch API replaces the XMLHttpRequest API, which was used in earlier versions of javascript for making asynchronous HTTP requests.
+- How to use Fetch API
+    - To use Fetch API, you can call the `fetch()` method, which takes a URL as its argument and returns a Promise that resolves with a `Response` object.
+    - The `Response` object contains the data received from the server, as well as methods for working with the response data, such as `json()` and `text()`
+    - `json()` to parse the response as JSON or `text()` to get the response as a string.
+- Code example of Fetch API
+```javascript
+fetch("https://api.github.com/users/MTouthang")
+  .then((response) => response.json())
+  .then((data) => console.log(data))
+  .catch((err) => console.log(err));
+
+// TODO:
+// Perform fetch with PUT, POST, DELETE, GET
+
+```
+
 #### 18.  What is DOM and Virtual DOM ? DOM explaination in Details ? 
 #### 19. What are different type of Functions we have and how all fuctions works ?
 #### 20. Different types of Error?
 #### 21. What is BOM(browser object model)?
 #### what is currying in javascript
-
-1. Fetch API

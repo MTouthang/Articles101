@@ -11,3 +11,12 @@ let promise = new Promise(function (resolve, reject) {
 promise
   .then((result) => console.log(result)) // ok! resolve
   .catch((error) => console.log("error")); // error
+
+const prom = new Promise(function (resolve, reject) {
+  setTimeout(() => {
+    resolve("hello world");
+  }, 3000);
+});
+
+prom.then((message) => console.log(message));
+prom.catch((error) => console.log(error));

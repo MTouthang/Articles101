@@ -243,3 +243,12 @@ return(x+y)
 console.log(myFunc(2, myFunc(5, -2)))
 // output - 5
 ```
+### Event 
+- **An event listener can be appended to the window object**
+    - True, Event listener are often used to listen for when the document is fully loaded in the browser. For this and other window events, we append an event listener to the window object.
+- **Can a value be passed through an event listener to its callback function**
+    - Yes, by capturing the value in a new function inside the callback function
+- **How do you capture the event object in an event listener**
+    - The event object is automatically passed as a parameter to the callback function. Simply name and use the parameter.
+- **If ou create several event listeners listening to the same event, only the last one in the script will work**
+    - False
