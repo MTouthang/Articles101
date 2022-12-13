@@ -498,7 +498,7 @@ fetch("https://api.github.com/users/MTouthang")
 // Perform fetch with PUT, POST, DELETE, GET
 
 ```
-
+#### Array methods and string methods
 #### 18.  What is DOM and Virtual DOM ? DOM explaination in Details ? 
 #### 19. What are different type of Functions we have and how all fuctions works ?
 #### 20. Different types of Error?

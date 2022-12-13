@@ -85,11 +85,22 @@ console.log(arr3)
 //output - [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
 ```    
 
-**The from()** static method creates a new, shallow-copied Array instances from an iterable or array like object.
+**The from()** method is use to create a new array instance from an array-like or iterable object. This method is commonly used to convert argument object or Nodelist object and other array like objects into true array.
 
 ```javascript
+// eg1.
 console.log(Array.from('foo'))   
 //output - ["f", "o", "o"]
+
+// eg2.
+const obj = {
+  0: "hello",
+  1: "world",
+  length: 2,
+};
+const newArray = Array.from(obj);
+console.log("From method", newArray);
+// output - ['hello', 'world']
 ```    
 
 #### 2. To search among elements -
@@ -130,7 +141,7 @@ console.log(found)
 ```
 
 
-**The filter()** method creates a shallow copy of a portion of a given array, filtered down to jst the element from the given array that pass the test implemented by the provided function.   
+**The filter()** method creates a shallow copy of a portion of a given array, filtered down to just the element from the given array that pass the test implemented by the provided function.   
 `syntax- Array.filter(func)`
 
 ```javascript
@@ -140,7 +151,7 @@ console.log(abr_course)
 //output - ["eco", "GK"]   
 ```   
 
-**The findIndex** method returns the index of he first element in an array that satisfies the provide testing function. if no elements satisfy the testing function, -1 is returned.
+**The findIndex** method returns the index of the first element in an array that satisfies the provide testing function. if no elements satisfy the testing function, -1 is returned.
 `syntax- Array.findIndex(func)`    
 
 ```javascript
@@ -245,7 +256,7 @@ console.log(chekAr);
 //output - true
 ```
 
-** The copyWithin()** method shallow copies part of an array to another location in the same array and returns it without modifying its length.
+**The copyWithin()** method shallow copies part of an array to another location in the same array and returns it without modifying its length.
 `syntax -Array.copyWithin(target) or Array.copyWithin(target, start) or Array.copyWithin(target, start, end)` 
 ```javascript
 const arr5 = [1, 2, 3, 4, 5];

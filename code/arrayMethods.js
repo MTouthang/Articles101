@@ -262,3 +262,14 @@ console.log(fltArr);
 // ```javascript
 const arrEle = [100, "BC", "ago"];
 console.log(typeof arrEle.toString());
+
+const obj = {
+  0: "hello",
+  1: "world",
+  length: 2,
+};
+const newArray = Array.from(obj);
+console.log("From method", newArray);
+
+const ranNum1 = [8, 10, 12, 190, 6];
+console.log(ranNum1.findIndex((e) => e > 10));
