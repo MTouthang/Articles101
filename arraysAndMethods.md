@@ -14,7 +14,10 @@ The Array can be declare in two ways -
 - `let array = new Array()`   
 - `let arr = []`
 
-
+#### Array Properties -  
+- The `Array[@@species]` accesor property returns the constructor used to construct return values from array methods
+- The `[@@unscopables]` data property of array.prototype is shared by all Array instances
+- The `length` data property of an Array instance represents the number of elments in that array.
 #### NOTE -   
 - The start index is always inclusive which means it will be included and the end index will be always exclusive which means it will be excluded.
 - Array.length is use to find the length of the arrays
@@ -113,7 +116,7 @@ console.log(names.indexOf("john"));
 //output - 1 (since index of array count from 0)
 ```    
 
-**The at()** method takes an integer value and returns the item at that index, allowing fro positive and negative integers, Negative integers count back from the last item the array
+**The at()** method takes an integer value and returns the item at that index, allowing for positive and negative integers, Negative integers count back from the last item the array
 `syntax -  Array.at(index)`
 
 ```javascript
@@ -290,6 +293,20 @@ const arrEle - [ 100, "BC", "ago"]
 console.log(arrEle.toString())    
 //output- "100, BC, ago"
 ```
+
+### Some others Array Methods:-
+- `@@iterator`
+    - The `@@iterator` method of an `Array` object implements the iterable protocol and allows arrays to be consumed by most syntaxes expecting iterables, such as the spread syntax and `for...of loops`
+- `entries()`
+- `findLastIndex()`
+- `flatMap()`
+- `includes()`
+- `keys()`
+- `of()`
+- `reduceRight()`
+- `some()`
+- `toLocaleString()`
+- `values()`
 
 **For further reading** 
 - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
