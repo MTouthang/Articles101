@@ -498,6 +498,12 @@ fetch("https://api.github.com/users/MTouthang")
 // Perform fetch with PUT, POST, DELETE, GET
 
 ```
+#### 21. Symbol in JavaScript
+- `Symbol` is a built-in object whose constructor returns a `symbol` primitive also called a symbol value or just a symbol - that's guaranteed to be unique.
+- Symbols are often used to add unique property keys to an object that wont collide with keys any other code might add to the object and which are hidden from any mechanisms other code will typically use to access the object
+- Symbols are useful for creating properties that are meant to be unique and not collide with any other properties on an object.
+- This can be especially useful when working with third-party libaries or APIs that may add properties to objects that you are working with.
+
 #### Array methods and string methods
 #### 18.  What is DOM and Virtual DOM ? DOM explaination in Details ? 
 #### 19. What are different type of Functions we have and how all fuctions works ?
