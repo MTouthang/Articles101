@@ -1,0 +1,27 @@
+### ES6 features 
+- ECMAScript 6 (ES6) is a version of the ECMAScript (ES) programming language, which is the standardized version of JavaScript.
+- It was released in 2015 and introduced several new features to the language. it includes - 
+- The let keyword
+- The const keyword
+- Arrow Functions
+- The ... operator
+- for/of
+- Map objects
+- Set Objects
+- Classes
+- Promise
+- Symbol 
+- Default Parameters
+- Function Rest Parameter
+- String.includes()
+- String.startsWith()
+- String.endswith()
+- Array.from()
+- Array keys()
+- Array find()
+- Array findIndex()
+- New Math methods
+- New Number Properties
+- New Number Methods
+- Object entries
+- Javascript Modules.

@@ -504,9 +504,6 @@ fetch("https://api.github.com/users/MTouthang")
 - Symbols are useful for creating properties that are meant to be unique and not collide with any other properties on an object.
 - This can be especially useful when working with third-party libaries or APIs that may add properties to objects that you are working with.
 
-#### Array methods and string methods
-#### 18.  What is DOM and Virtual DOM ? DOM explaination in Details ? 
-#### 19. What are different type of Functions we have and how all fuctions works ?
 #### 20. Different types of Error?
 #### 21. What is BOM(browser object model)?
 #### what is currying in javascript
