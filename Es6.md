@@ -509,3 +509,12 @@ console.log(math.PI); // 3.14
 console.log(math.calculateCircumference(5)); // 31.4
 
 ```
+- Some of few best practices for writing JavaScript code:
+    - `use Semicolons`
+    - `Use Strict mode`
+    - `Use the modern syntax` which is the latest syntax
+    - `Use const and let instead of var`
+    - `Use arrow function`
+    - `Use template literals`
+    - `Use destructuring`
+    - `Use the spread operator`
